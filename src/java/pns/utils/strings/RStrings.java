@@ -412,4 +412,12 @@ public class RStrings {
 	return "" + num;
     }
 
+    public static String generateBRs(String txt) {
+	String[] txtParts = txt.split(System.lineSeparator());
+	String res = "";
+	for (int k = 0; k < txtParts.length; k++) {
+	    res += txtParts[k] + "<br />";
+	}
+	return res;
+    }
 }
